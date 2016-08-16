@@ -1,0 +1,181 @@
+body { color: #444;  background: #f3f3f3; font: normal 12px "Adobe Garamond Pro", "Palatino", serif; margin: 2em;}
+
+header { margin: 0 0 20px 220px; border-bottom: 1px solid #6c6c6c; 	width: 360px; position: relative}
+
+h1 { font-size: 20px; font-weight: normal; text-shadow: #fff 0 1px 0; margin: 0 0 0 0; padding: 0; text-align: center }
+
+#chart {text-align: center;
+  width:500px;
+  height : 500px;
+  position:relative;
+  top:50px;
+  right:-100px;
+  float: left;
+	}
+  
+#pie {text-align: center;
+  width:1000px;
+  height : 500px;
+  position:absolute;
+  top:300px;
+  right:500px;
+  
+}
+
+#area{
+text-align: center;
+ height : 50px;
+ width:500px;
+
+ position:absolute;
+  top:250px;
+  right:500px;
+}
+
+#drop{
+text-align: center;
+ height : 50px;
+ width:100px;
+ position:absolute;
+  top:330px;
+  right:1100px;
+
+}
+
+#areaDrop{
+text-align: center;
+ height : 50px;
+ width:100px;
+ position:absolute;
+  top:300px;
+  right:1100px;
+
+}
+
+#country {text-align: center;
+  width:500px;
+  height : 500px;
+  position:absolute;
+  top:300px;
+  right:500px;
+}
+
+#tip {
+
+font-size:19px;
+position:absolute;
+ position:absolute;
+  top:350px;
+  right:250px;
+   height : 500px;
+ width:180px;
+  }
+
+text.label { fill: #444; cursor: pointer;  }
+
+text.label.start { text-anchor: end;cursor: pointer;   }
+
+line.slope {  stroke-width: 1; }
+
+.missing text.label { display: none; }
+.missing line.slope { display: none; }
+
+.over text.label { fill: #bb2629; font-size: 14px !important; font-weight: bold; }
+.over line.slope { stroke: #bb2629; stroke-width: 2; }
+
+.legend {font-size: 13px;}
+
+rect {stroke-width: 2;}
+  
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 12px;
+  left: 130px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 80px;	
+  z-index: 10;
+}
+rect {
+cursor: pointer;                          
+stroke-width: 2;
+}
+rect.disabled {                             
+fill: transparent !important;            
+}	 
+
+#title{
+font-size: 24px;
+text-align : center;
+height : 50px;
+font-weight : bold; 
+}
+#description{
+font-size: 14px;
+  height: 100px;
+  width: 70%;
+  margin: auto;
+}
+#button{
+position:relative;
+top:50px;
+ width:15%;
+  height:500px;
+  float: left;
+  z-index:9;
+}
+button{
+position:relative;
+left:150px;
+border:blue;
+width: 100px;
+height:30px;
+margin:50px;
+text-align:center;
+display:block;
+cursor: pointer;                          
+}
+
+
+.button rect {
+  stroke: #1f628d;
+  stroke-width: 2px;
+}
+
+.button #gradient-start {
+/*  stop-color: #3498db; */
+  stop-color: #4d9fb6; /* 70% */
+  stop-opacity: 1;
+}
+
+.button #gradient-stop {
+/*  stop-color: #2980b9; */
+  stop-color: #1a84a2; /* 100% */
+  stop-opacity: 1;
+}
+
+.button #gradient-start.active {
+/*  stop-color: #3cb0fd; */
+  stop-color: #99c8d5; /* 40% */
+}
+
+.button #gradient-stop.active {
+/*  stop-color: #3498db; */
+  stop-color: #4d9fb6; /* 70% */
+}
+
+.button text {
+  font-size: 15px;
+  fill: #eee;
+  pointer-events: none;
+  text-anchor: middle;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+

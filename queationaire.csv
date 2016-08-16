@@ -1,0 +1,301 @@
+Question,Gender,Answer,number,Area
+ST77Q01,Female,Every Lesson,58507,Math Teaching
+ST77Q01,Female,Most Lessons,51354,Math Teaching
+ST77Q01,Female,Never or Hardly Ever,10954,Math Teaching
+ST77Q01,Female,Some Lessons,38850,Math Teaching
+ST77Q01,Female,NA,85399,Math Teaching
+ST77Q01,Male,Every Lesson,59405,Math Teaching
+ST77Q01,Male,Most Lessons,50634,Math Teaching
+ST77Q01,Male,Never or Hardly Ever,11429,Math Teaching
+ST77Q01,Male,Some Lessons,34115,Math Teaching
+ST77Q01,Male,NA,84843,Math Teaching
+ST77Q02,Female,Every Lesson,68334,Math Teaching
+ST77Q02,Female,Most Lessons,46524,Math Teaching
+ST77Q02,Female,Never or Hardly Ever,10035,Math Teaching
+ST77Q02,Female,Some Lessons,34695,Math Teaching
+ST77Q02,Female,NA,85476,Math Teaching
+ST77Q02,Male,Every Lesson,67851,Math Teaching
+ST77Q02,Male,Most Lessons,47759,Math Teaching
+ST77Q02,Male,Never or Hardly Ever,9558,Math Teaching
+ST77Q02,Male,Some Lessons,30157,Math Teaching
+ST77Q02,Male,NA,85101,Math Teaching
+ST77Q04,Female,Every Lesson,77616,Math Teaching
+ST77Q04,Female,Most Lessons,44449,Math Teaching
+ST77Q04,Female,Never or Hardly Ever,8629,Math Teaching
+ST77Q04,Female,Some Lessons,28662,Math Teaching
+ST77Q04,Female,NA,85708,Math Teaching
+ST77Q04,Male,Every Lesson,75409,Math Teaching
+ST77Q04,Male,Most Lessons,45543,Math Teaching
+ST77Q04,Male,Never or Hardly Ever,8596,Math Teaching
+ST77Q04,Male,Some Lessons,25464,Math Teaching
+ST77Q04,Male,NA,85414,Math Teaching
+ST77Q05,Female,Every Lesson,69606,Math Teaching
+ST77Q05,Female,Most Lessons,43248,Math Teaching
+ST77Q05,Female,Never or Hardly Ever,12881,Math Teaching
+ST77Q05,Female,Some Lessons,33839,Math Teaching
+ST77Q05,Female,NA,85490,Math Teaching
+ST77Q05,Male,Every Lesson,67697,Math Teaching
+ST77Q05,Male,Most Lessons,43972,Math Teaching
+ST77Q05,Male,Never or Hardly Ever,13199,Math Teaching
+ST77Q05,Male,Some Lessons,30385,Math Teaching
+ST77Q05,Male,NA,85173,Math Teaching
+ST77Q06,Female,Every Lesson,67640,Math Teaching
+ST77Q06,Female,Most Lessons,44688,Math Teaching
+ST77Q06,Female,Never or Hardly Ever,13446,Math Teaching
+ST77Q06,Female,Some Lessons,33788,Math Teaching
+ST77Q06,Female,NA,85502,Math Teaching
+ST77Q06,Male,Every Lesson,66092,Math Teaching
+ST77Q06,Male,Most Lessons,45125,Math Teaching
+ST77Q06,Male,Never or Hardly Ever,13949,Math Teaching
+ST77Q06,Male,Some Lessons,30079,Math Teaching
+ST77Q06,Male,NA,85181,Math Teaching
+ST29Q01,Female,Agree,46868,Math Interest
+ST29Q01,Female,Disagree,67151,Math Interest
+ST29Q01,Female,Strongly agree,11258,Math Interest
+ST29Q01,Female,Strongly disagree,35014,Math Interest
+ST29Q01,Female,NA,84773,Math Interest
+ST29Q01,Male,Agree,53741,Math Interest
+ST29Q01,Male,Disagree,55747,Math Interest
+ST29Q01,Male,Strongly agree,17508,Math Interest
+ST29Q01,Male,Strongly disagree,28624,Math Interest
+ST29Q01,Male,NA,84806,Math Interest
+ST29Q03,Female,Agree,50726,Math Interest
+ST29Q03,Female,Disagree,62503,Math Interest
+ST29Q03,Female,Strongly agree,15754,Math Interest
+ST29Q03,Female,Strongly disagree,30903,Math Interest
+ST29Q03,Female,NA,85178,Math Interest
+ST29Q03,Male,Agree,54480,Math Interest
+ST29Q03,Male,Disagree,56006,Math Interest
+ST29Q03,Male,Strongly agree,19317,Math Interest
+ST29Q03,Male,Strongly disagree,25239,Math Interest
+ST29Q03,Male,NA,85384,Math Interest
+ST29Q04,Female,Agree,48654,Math Interest
+ST29Q04,Female,Disagree,62030,Math Interest
+ST29Q04,Female,Strongly agree,19177,Math Interest
+ST29Q04,Female,Strongly disagree,29896,Math Interest
+ST29Q04,Female,NA,85307,Math Interest
+ST29Q04,Male,Agree,52654,Math Interest
+ST29Q04,Male,Disagree,54922,Math Interest
+ST29Q04,Male,Strongly agree,22872,Math Interest
+ST29Q04,Male,Strongly disagree,24532,Math Interest
+ST29Q04,Male,NA,85446,Math Interest
+ST29Q06,Female,Agree,67953,Math Interest
+ST29Q06,Female,Disagree,49122,Math Interest
+ST29Q06,Female,Strongly agree,25274,Math Interest
+ST29Q06,Female,Strongly disagree,17418,Math Interest
+ST29Q06,Female,NA,85297,Math Interest
+ST29Q06,Male,Agree,69341,Math Interest
+ST29Q06,Male,Disagree,40137,Math Interest
+ST29Q06,Male,Strongly agree,30785,Math Interest
+ST29Q06,Male,Strongly disagree,14716,Math Interest
+ST29Q06,Male,NA,85447,Math Interest
+ST42Q03,Female,Agree,42986,Math Anxiety
+ST42Q03,Female,Disagree,68644,Math Anxiety
+ST42Q03,Female,Strongly agree,19734,Math Anxiety
+ST42Q03,Female,Strongly disagree,26994,Math Anxiety
+ST42Q03,Female,NA,86706,Math Anxiety
+ST42Q03,Male,Agree,37669,Math Anxiety
+ST42Q03,Male,Disagree,67070,Math Anxiety
+ST42Q03,Male,Strongly agree,15728,Math Anxiety
+ST42Q03,Male,Strongly disagree,33351,Math Anxiety
+ST42Q03,Male,NA,86608,Math Anxiety
+ST42Q05,Female,Agree,46552,Math Anxiety
+ST42Q05,Female,Disagree,69915,Math Anxiety
+ST42Q05,Female,Strongly agree,18117,Math Anxiety
+ST42Q05,Female,Strongly disagree,23917,Math Anxiety
+ST42Q05,Female,NA,86563,Math Anxiety
+ST42Q05,Male,Agree,38259,Math Anxiety
+ST42Q05,Male,Disagree,70779,Math Anxiety
+ST42Q05,Male,Strongly agree,14061,Math Anxiety
+ST42Q05,Male,Strongly disagree,31024,Math Anxiety
+ST42Q05,Male,NA,86303,Math Anxiety
+ST42Q08,Female,Agree,41630,Math Anxiety
+ST42Q08,Female,Disagree,72853,Math Anxiety
+ST42Q08,Female,Strongly agree,16583,Math Anxiety
+ST42Q08,Female,Strongly disagree,27379,Math Anxiety
+ST42Q08,Female,NA,86619,Math Anxiety
+ST42Q08,Male,Agree,33545,Math Anxiety
+ST42Q08,Male,Disagree,71567,Math Anxiety
+ST42Q08,Male,Strongly agree,12817,Math Anxiety
+ST42Q08,Male,Strongly disagree,36082,Math Anxiety
+ST42Q08,Male,NA,86415,Math Anxiety
+ST42Q10,Female,Agree,61334,Math Anxiety
+ST42Q10,Female,Disagree,28372,Math Anxiety
+ST42Q10,Female,Strongly agree,55377,Math Anxiety
+ST42Q10,Female,Strongly disagree,13559,Math Anxiety
+ST42Q10,Female,NA,86422,Math Anxiety
+ST42Q10,Male,Agree,56593,Math Anxiety
+ST42Q10,Male,Disagree,35141,Math Anxiety
+ST42Q10,Male,Strongly agree,41910,Math Anxiety
+ST42Q10,Male,Strongly disagree,20567,Math Anxiety
+ST42Q10,Male,NA,86215,Math Anxiety
+ST42Q01,Female,Agree,70811,Math Anxiety
+ST42Q01,Female,Disagree,38542,Math Anxiety
+ST42Q01,Female,Strongly agree,39446,Math Anxiety
+ST42Q01,Female,Strongly disagree,10263,Math Anxiety
+ST42Q01,Female,NA,86002,Math Anxiety
+ST42Q01,Male,Agree,63678,Math Anxiety
+ST42Q01,Male,Disagree,44817,Math Anxiety
+ST42Q01,Male,Strongly agree,29250,Math Anxiety
+ST42Q01,Male,Strongly disagree,17048,Math Anxiety
+ST42Q01,Male,NA,85633,Math Anxiety
+ST42Q02,Female,Agree,48711,Math Self-Concept
+ST42Q02,Female,Disagree,58084,Math Self-Concept
+ST42Q02,Female,Strongly agree,30874,Math Self-Concept
+ST42Q02,Female,Strongly disagree,21264,Math Self-Concept
+ST42Q02,Female,NA,86131,Math Self-Concept
+ST42Q02,Male,Agree,43100,Math Self-Concept
+ST42Q02,Male,Disagree,60574,Math Self-Concept
+ST42Q02,Male,Strongly agree,20535,Math Self-Concept
+ST42Q02,Male,Strongly disagree,30360,Math Self-Concept
+ST42Q02,Male,NA,85857,Math Self-Concept
+ST42Q04,Female,Agree,67114,Math Self-Concept
+ST42Q04,Female,Disagree,51457,Math Self-Concept
+ST42Q04,Female,Strongly agree,23520,Math Self-Concept
+ST42Q04,Female,Strongly disagree,16066,Math Self-Concept
+ST42Q04,Female,NA,86907,Math Self-Concept
+ST42Q04,Male,Agree,68244,Math Self-Concept
+ST42Q04,Male,Disagree,45403,Math Self-Concept
+ST42Q04,Male,Strongly agree,27347,Math Self-Concept
+ST42Q04,Male,Strongly disagree,12829,Math Self-Concept
+ST42Q04,Male,NA,86603,Math Self-Concept
+ST42Q06,Female,Agree,55346,Math Self-Concept
+ST42Q06,Female,Disagree,62693,Math Self-Concept
+ST42Q06,Female,Strongly agree,18166,Math Self-Concept
+ST42Q06,Female,Strongly disagree,22114,Math Self-Concept
+ST42Q06,Female,NA,86745,Math Self-Concept
+ST42Q06,Male,Agree,63662,Math Self-Concept
+ST42Q06,Male,Disagree,48828,Math Self-Concept
+ST42Q06,Male,Strongly agree,27857,Math Self-Concept
+ST42Q06,Male,Strongly disagree,13661,Math Self-Concept
+ST42Q06,Male,NA,86418,Math Self-Concept
+ST42Q07,Female,Agree,34237,Math Self-Concept
+ST42Q07,Female,Disagree,58633,Math Self-Concept
+ST42Q07,Female,Strongly agree,19831,Math Self-Concept
+ST42Q07,Female,Strongly disagree,45824,Math Self-Concept
+ST42Q07,Female,NA,86539,Math Self-Concept
+ST42Q07,Male,Agree,43685,Math Self-Concept
+ST42Q07,Male,Disagree,51966,Math Self-Concept
+ST42Q07,Male,Strongly agree,29769,Math Self-Concept
+ST42Q07,Male,Strongly disagree,28638,Math Self-Concept
+ST42Q07,Male,NA,86368,Math Self-Concept
+ST42Q09,Female,Agree,41245,Math Self-Concept
+ST42Q09,Female,Disagree,70186,Math Self-Concept
+ST42Q09,Female,Strongly agree,11158,Math Self-Concept
+ST42Q09,Female,Strongly disagree,35730,Math Self-Concept
+ST42Q09,Female,NA,86745,Math Self-Concept
+ST42Q09,Male,Agree,52675,Math Self-Concept
+ST42Q09,Male,Disagree,60758,Math Self-Concept
+ST42Q09,Male,Strongly agree,19048,Math Self-Concept
+ST42Q09,Male,Strongly disagree,21423,Math Self-Concept
+ST42Q09,Male,NA,86522,Math Self-Concept
+ST48Q01,Female,Courses after school Math,81372,Math Intentions
+ST48Q01,Female,Courses after school Test Language,70483,Math Intentions
+ST48Q01,Female,NA,93209,Math Intentions
+ST48Q01,Male,Courses after school Math,89980,Math Intentions
+ST48Q01,Male,Courses after school Test Language,52575,Math Intentions
+ST48Q01,Male,NA,97871,Math Intentions
+ST48Q02,Female,Major in college Math,55243,Math Intentions
+ST48Q02,Female,Major in college Science,93342,Math Intentions
+ST48Q02,Female,NA,96479,Math Intentions
+ST48Q02,Male,Major in college Math,67489,Math Intentions
+ST48Q02,Male,Major in college Science,73753,Math Intentions
+ST48Q02,Male,NA,99184,Math Intentions
+ST48Q03,Female,Study harder Math,85676,Math Intentions
+ST48Q03,Female,Study harder Test Language,68217,Math Intentions
+ST48Q03,Female,NA,91171,Math Intentions
+ST48Q03,Male,Study harder Math,92504,Math Intentions
+ST48Q03,Male,Study harder Test Language,52082,Math Intentions
+ST48Q03,Male,NA,95840,Math Intentions
+ST48Q04,Female,Maximum classes Math,64049,Math Intentions
+ST48Q04,Female,Maximum classes Science,73397,Math Intentions
+ST48Q04,Female,NA,107618,Math Intentions
+ST48Q04,Male,Maximum classes Math,69953,Math Intentions
+ST48Q04,Male,Maximum classes Science,60317,Math Intentions
+ST48Q04,Male,NA,110156,Math Intentions
+ST48Q05,Female,Pursuing a career Math,54970,Math Intentions
+ST48Q05,Female,Pursuing a career Science,91887,Math Intentions
+ST48Q05,Female,NA,98207,Math Intentions
+ST48Q05,Male,Pursuing a career Math,71389,Math Intentions
+ST48Q05,Male,Pursuing a career Science,69746,Math Intentions
+ST48Q05,Male,NA,99291,Math Intentions
+ST49Q01,Female,Always or almost always,9456,Math Behaviour
+ST49Q01,Female,Never or rarely,52950,Math Behaviour
+ST49Q01,Female,Often,28731,Math Behaviour
+ST49Q01,Female,Sometimes,68109,Math Behaviour
+ST49Q01,Female,NA,85818,Math Behaviour
+ST49Q01,Male,Always or almost always,12385,Math Behaviour
+ST49Q01,Male,Never or rarely,54548,Math Behaviour
+ST49Q01,Male,Often,28077,Math Behaviour
+ST49Q01,Male,Sometimes,59239,Math Behaviour
+ST49Q01,Male,NA,86177,Math Behaviour
+ST49Q02,Female,Always or almost always,11330,Math Behaviour
+ST49Q02,Female,Never or rarely,38942,Math Behaviour
+ST49Q02,Female,Often,35708,Math Behaviour
+ST49Q02,Female,Sometimes,73064,Math Behaviour
+ST49Q02,Female,NA,86020,Math Behaviour
+ST49Q02,Male,Always or almost always,12342,Math Behaviour
+ST49Q02,Male,Never or rarely,39120,Math Behaviour
+ST49Q02,Male,Often,37277,Math Behaviour
+ST49Q02,Male,Sometimes,65242,Math Behaviour
+ST49Q02,Male,NA,86445,Math Behaviour
+ST49Q03,Female,Always or almost always,8074,Math Behaviour
+ST49Q03,Female,Never or rarely,84666,Math Behaviour
+ST49Q03,Female,Often,19661,Math Behaviour
+ST49Q03,Female,Sometimes,46239,Math Behaviour
+ST49Q03,Female,NA,86424,Math Behaviour
+ST49Q03,Male,Always or almost always,9706,Math Behaviour
+ST49Q03,Male,Never or rarely,75626,Math Behaviour
+ST49Q03,Male,Often,22125,Math Behaviour
+ST49Q03,Male,Sometimes,46071,Math Behaviour
+ST49Q03,Male,NA,86898,Math Behaviour
+ST49Q04,Female,Always or almost always,5028,Math Behaviour
+ST49Q04,Female,Never or rarely,118701,Math Behaviour
+ST49Q04,Female,Often,9274,Math Behaviour
+ST49Q04,Female,Sometimes,25719,Math Behaviour
+ST49Q04,Female,NA,86342,Math Behaviour
+ST49Q04,Male,Always or almost always,8411,Math Behaviour
+ST49Q04,Male,Never or rarely,101581,Math Behaviour
+ST49Q04,Male,Often,14310,Math Behaviour
+ST49Q04,Male,Sometimes,29354,Math Behaviour
+ST49Q04,Male,NA,86770,Math Behaviour
+ST49Q05,Female,Always or almost always,6622,Math Behaviour
+ST49Q05,Female,Never or rarely,91353,Math Behaviour
+ST49Q05,Female,Often,14386,Math Behaviour
+ST49Q05,Female,Sometimes,46505,Math Behaviour
+ST49Q05,Female,NA,86198,Math Behaviour
+ST49Q05,Male,Always or almost always,8076,Math Behaviour
+ST49Q05,Male,Never or rarely,88060,Math Behaviour
+ST49Q05,Male,Often,15755,Math Behaviour
+ST49Q05,Male,Sometimes,41825,Math Behaviour
+ST49Q05,Male,NA,86710,Math Behaviour
+ST49Q06,Female,Always or almost always,4795,Math Behaviour
+ST49Q06,Female,Never or rarely,112576,Math Behaviour
+ST49Q06,Female,Often,10739,Math Behaviour
+ST49Q06,Female,Sometimes,30712,Math Behaviour
+ST49Q06,Female,NA,86242,Math Behaviour
+ST49Q06,Male,Always or almost always,13556,Math Behaviour
+ST49Q06,Male,Never or rarely,70686,Math Behaviour
+ST49Q06,Male,Often,24402,Math Behaviour
+ST49Q06,Male,Sometimes,45105,Math Behaviour
+ST49Q06,Male,NA,86677,Math Behaviour
+ST49Q07,Female,Always or almost always,6362,Math Behaviour
+ST49Q07,Female,Never or rarely,109354,Math Behaviour
+ST49Q07,Female,Often,13094,Math Behaviour
+ST49Q07,Female,Sometimes,29933,Math Behaviour
+ST49Q07,Female,NA,86321,Math Behaviour
+ST49Q07,Male,Always or almost always,14992,Math Behaviour
+ST49Q07,Male,Never or rarely,75903,Math Behaviour
+ST49Q07,Male,Often,24279,Math Behaviour
+ST49Q07,Male,Sometimes,38508,Math Behaviour
+ST49Q07,Male,NA,86744,Math Behaviour
+ST49Q09,Female,Always or almost always,2861,Math Behaviour
+ST49Q09,Female,Never or rarely,141052,Math Behaviour
+ST49Q09,Female,Often,4751,Math Behaviour
+ST49Q09,Female,Sometimes,10258,Math Behaviour
+ST49Q09,Female,NA,86142,Math Behaviour
+ST49Q09,Male,Always or almost always,5630,Math Behaviour
+ST49Q09,Male,Never or rarely,126057,Math Behaviour
+ST49Q09,Male,Often,8172,Math Behaviour
+ST49Q09,Male,Sometimes,13971,Math Behaviour
+ST49Q09,Male,NA,86596,Math Behaviour
