@@ -10,17 +10,20 @@ We use donut chart to show the result of questionnaire. The questionnaire can be
 
 
 #Feedback
-First sketch:  
-It’s better to show a chart of different countries.  
-So I add the function that you can investigate countries data by clicking country name.  
-It’s not clear what we can get from those chart  
-So I add brief description of result for each question domain and brief analyze.  
-The slop graph is messy and it’s confused audience.  
-So I increase the width of slop graph and color lines to make some countries more clear.  
-Final sketch:  
-It’s more convenient to add a button near donut char which can select multiple legend.  
-It’s considerable to draw a map or bar char on current visualization.  
-Maybe we can change the color.
+##First sketch:
+###First Person:
+It’s better to show a chart of different countries.   
+Solution: I add the function that you can investigate countries data by clicking country name.
+###Second Person:
+It’s not clear what we can get from those chart.  
+Solution: I add brief description of result for each question domain and brief analyze.
+###Third Person:
+The slop graph is messy and it’s confusing for audience.  
+Solution: I increase the width of slop graph and color lines to make some countries more clear.
+
+
+##Final sketch:
+Suggestion: It’s more convenient to add a button near donut char which can select multiple legend. It’s considerable to draw a map or bar char on current visualization. Maybe we can change the color.
 
 #Resource
 http://zeroviscosity.com/d3-js-step-by-step/step-6-animating-interactivity   
