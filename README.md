@@ -31,3 +31,8 @@ http://bl.ocks.org/zbjornson/2573074
 https://github.com/d3/d3/wiki/ordinal-scales   
 http://bl.ocks.org/zbjornson/2573074    
 
+#preview
+![Alt text](/preview/preview1.png?raw=true "Optional Title")
+![Alt text](/preview/preview2.png?raw=true "Optional Title")
+![Alt text](/preview/preview3.png?raw=true "Optional Title")
+![Alt text](/preview/preview4.png?raw=true "Optional Title")
