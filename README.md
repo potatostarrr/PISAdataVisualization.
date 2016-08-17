@@ -12,13 +12,13 @@ We use donut chart to show the result of questionnaire. The questionnaire can be
 #Feedback
 ##First sketch:
 ###First Person:
-It’s better to show a chart of different countries.   
+Suggestion: It’s better to show a chart of different countries.   
 Solution: I add the function that you can investigate countries data by clicking country name.
 ###Second Person:
-It’s not clear what we can get from those chart.  
+Suggestion: It’s not clear what we can get from those chart.  
 Solution: I add brief description of result for each question domain and brief analyze.
 ###Third Person:
-The slop graph is messy and it’s confusing for audience.  
+Suggestion: The slop graph is messy and it’s confusing for audience.  
 Solution: I increase the width of slop graph and color lines to make some countries more clear.
 
 
