@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-	
-	<h1></h1>
-	
-	<div id="title">
-	Math performance between male and female 
-	</div>
 
-	<div id= "description">
-Some people have the prejudice that boys tend to be better at math than girls. We want to investigate this opinion using pisa data.
-We are interested in the difference of math performance between male and female for different country. This slop graph shows the average plausible value in mathematics. The light blue lines mean male has higher score than female whereas red lines mean female has higher score.
-We can find male has higher math performance in most country. This trend can be extremely clear when a country has higher quality of education (higher average plausible value). There are 32 questions correlated to education and personal feeling below to 6 aspects. We can investigate it by drawing donut chart. You also can also investigate the statistics of different country by clicking country name in the slop graph.
-By grouping countries depending on whether female students have better score, we can find girls are clearly more positive with math from current education to future major in the countries where girls have better performance than boys. Girls tend to get more extra help in math than boys which may help them build confidence and make them be interested in math.
-	</div>
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-	<div id = "button">
-	<button id = "slop">Performance Comparison</button>
-	<button id = "teach">Math Teaching</button>
-	<button id = "interest">Math Interest</button>
-	<button id = "anxiety">Math Anxiety</button>
-	<button id = "concept">Math Self-Concept</button>
-	<button id = "intentions">Math Intentions</button>
-	<button id = "behaviour">Math Behaviour</button>
-	</div>
-	
-	<div id = "country">
-	</div>
-	
-	<div id = "chart">
-	</div>
-	
-	<div id = "pie">
-	</div>
-	
-	<div id ="drop">
-	</div>
-	
-	<div id = "areaDrop">
-	</div>
-	
-	<div id  = "tip">
-	</div>
-	
-	<h1 id = "area"></h1>
-	<script src = "javascript/button.js"></script>
-	<script src = "javascript/chart.js"></script>
-    <script src = "javascript/pie.js"></script>
-	<script src = "javascript/country.js"></script>
-	<script src = "javascript/main.js"></script>
-	<script src = "javascript/country.js"></script>
-	</body>
+<body>
+
+    <h1></h1>
+
+    <div id="title">
+        Math performance between male and female
+    </div>
+
+    <div id="description">
+		PISA is a survey of students' skills and knowledge as they approach the end of compulsory education.<br>
+        Some people have the prejudice that boys tend to be better at math than girls. We
+        want to investigate this opinion using pisa data. We are interested in the
+        difference of math performance between male and female for different country.<br>
+        This slop graph shows the average plausible value in mathematics. The light
+        blue lines mean male has higher score than female whereas red lines mean
+        female has higher score.<br>
+		We can find male has higher math performance in
+        most country. This trend can be extremely clear when a country has higher
+        quality of education (higher average plausible value). There are 32 questions
+        correlated to education and personal feeling below to 6 aspects. We can investigate
+        it by drawing donut chart. You also can also investigate the statistics of
+        different country by clicking country name in the slop graph.<br>
+		By grouping countries depending on whether female students have better score, we can
+        find girls are clearly more positive with math from current education to
+        future major in the countries where girls have better performance than boys.
+        Girls tend to get more extra help in math than boys which may help them build
+        confidence and make them be interested in math.<br>
+		<b>You can explore the data by youself by clicking legends in the center of ring chart.
+		It will give you different ratio.</b>
+    </div>
+
+    <div id="button">
+        <button id="slop">Performance Comparison</button>
+        <button id="teach">Math Teaching</button>
+        <button id="interest">Math Interest</button>
+        <button id="anxiety">Math Anxiety</button>
+        <button id="concept">Math Self-Concept</button>
+        <button id="intentions">Math Intentions</button>
+        <button id="behaviour">Math Behaviour</button>
+    </div>
+
+    <div id="country">
+    </div>
+
+    <div id="chart">
+    </div>
+
+    <div id="pie">
+    </div>
+
+    <div id="drop">
+    </div>
+
+    <div id="areaDrop">
+    </div>
+
+    <div id="tip">
+    </div>
+
+    <h1 id="area"></h1>
+    <script src="javascript/button.js"></script>
+    <script src="javascript/chart.js"></script>
+    <script src="javascript/pie.js"></script>
+    <script src="javascript/country.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/country.js"></script>
+</body>
+
 </html>
