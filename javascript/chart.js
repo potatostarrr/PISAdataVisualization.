@@ -1,11 +1,6 @@
 function drawLine(csv) {
     //create json data for slop graph 
     var data = [];
-    var gender = csv.map(function(d) {
-        return d['ST04Q01']
-    })
-    var labels = d3.keys(csv[0])
-
     for (i = 0; i < csv.length; i += 2) {
         r = {
             oecd: csv[i]["OECD"],
@@ -18,13 +13,13 @@ function drawLine(csv) {
 
     var font_size = 15,
         margin = 10,
-        width = 1000,
-        height = labels.length * font_size * 1.5 + margin;
-
+        width = 1000;
+	
+	//append svg and set the size
     var chart = d3.select("#chart").append("svg")
         .attr("width", width)
-        .attr("height", 2500);
-    //get values of math score then sort them			   
+        .attr("height", 2800);
+    //get values of math score in our json data then sort them			   
     var values = data
         .map(function(d) {
             return d3.format(".1f")(d.male);
@@ -47,22 +42,23 @@ function drawLine(csv) {
         //create scale
         slope = d3.scalePoint()
         .domain(values)
-        .range([margin, height])
-
+        .range([margin, 500])
+	
+	//set default position value
     var min_h_spacing = 1.1 * font_size,
         previousY = 1.1 * font_size,
         thisY,
         additionalSpacing;
 
-    //add start and end postion in json data
+    //store start and end postion in json data
     data.forEach(function(d) {
         d.startY = slope(d3.format(".1f")(d.male)) + 100;
         d.endY = slope(d3.format(".1f")(d.female)) + 100;
     });
-
+	
+	//sort all female math score and set appropriate position
     data
         .sort(function(a, b) {
-
             if ((d3.format(".1f")(a.female) == d3.format(".1f")(b.female)))
                 return 0;
             return (a.female < b.female) ? -1 : +1;
@@ -82,6 +78,8 @@ function drawLine(csv) {
         });
 
     previousY = 1.1 * font_size;
+	
+	//sort all male math scoer and set appropriate position
     data
         .sort(function(a, b) {
             if ((d3.format(".1f")(a.male) == d3.format(".1f")(b.male)))
@@ -104,14 +102,14 @@ function drawLine(csv) {
         });
 
 
-
+	//bind our json data with svg
     var subject = chart.selectAll('g.subject')
         .data(data)
         .enter()
         .append('g')
         .attr("class", "subject")
 
-
+	//add mouse event 
     subject
         .on("mouseover", function(d, i) {
             return d3.select(this).classed("over", true);
@@ -119,12 +117,12 @@ function drawLine(csv) {
         .on("mouseout", function(d, i) {
             return d3.select(this).classed("over", false);
         });
-
+	//only keep fixed point
     label_format = function(value) {
             return d3.format(".1f")(value);
         },
 
-        // ** Left column
+        // add text to Left column and set the postion
         subject
         .append("text")
         .classed("label start", true)
@@ -138,6 +136,8 @@ function drawLine(csv) {
             return d.country + " " + label_format(d.male);
         })
         .on("click", function(d) {
+			//add click event to each country name, let the chart div invisible and draw ring chart. 
+			//set global variable analyze to 0 to draw ring chart of country 
             analyze = 0;
             show_slop = 0;
             d3.select("#chart").style("opacity", 0)
@@ -161,7 +161,7 @@ function drawLine(csv) {
         .style("font-size", 20)
         .text("Male(Region/Score)");
 
-    // ** Right column
+        // add text to Left column and set the postion
     subject
         .append("text")
         .classed("label end", true)
@@ -174,7 +174,9 @@ function drawLine(csv) {
         .text(function(d) {
             return label_format(d.female) + " " + d.country;
         })
-        .on("click", function(d) { //add click event
+        .on("click", function(d) { 
+			//add click event to each country name, let the chart div invisible and draw ring chart. 
+			//set global variable analyze to 0 to draw ring chart of country 
             analyze = 0;
             show_slop = 0;
             d3.select("#chart").style("opacity", 0)
@@ -207,7 +209,7 @@ function drawLine(csv) {
 
 
 
-    // ** Slope lines
+    // add slope lines
     var line = subject
         .append("line")
         .classed("slope", function(d) {
@@ -222,6 +224,7 @@ function drawLine(csv) {
             return d.male && d.female ? d.endY - font_size / 2 + 2 : null;
         })
         .style("stroke", function(d, i) {
+		 // change line color depends on whether male have higher scoer
             if (d.male > d.female) {
                 return "lightblue";
             } else {
@@ -229,8 +232,8 @@ function drawLine(csv) {
                 return "red";
             }
         });
-    // add legend of line color
-
+		
+   //add legend to describe line color
     var legend = chart
         .selectAll(".legend")
         .data(["Increase", "Decrease"])
@@ -242,7 +245,6 @@ function drawLine(csv) {
             var vert = i * 30 + 60;
             return 'translate(' + horz + ',' + vert + ')';
         })
-
     legend.append("rect")
         .attr("width", 40)
         .attr("height", 20)
@@ -261,7 +263,7 @@ function drawLine(csv) {
             return d
         })
 
-    // add Analyze button in svg
+    // add Analyze button in svg, 
     var b = chart
         .append("g")
         .attr("class", "button")
@@ -275,6 +277,7 @@ function drawLine(csv) {
         .text(t)
         .count(0)
         .cb(function() {
+			//set global variable analyze to 1 to draw comparison ring chart.
             analyze = 1;
             d3.select("#chart").style("opacity", 0)
                 .style("z-index", 0);

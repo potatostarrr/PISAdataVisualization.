@@ -1,4 +1,4 @@
-//function which can create two comparitive donut chart 
+//create two comparitive donut chart 
 function country(csv) {
 
     function drawCountry(data, svg, tipPosition) {
@@ -6,12 +6,14 @@ function country(csv) {
         //global variable analyze decide we want to a specific country or grouped countries 
         //create text area
         if (analyze === 0) {
+			//when analyze=0, get data of specific country
             var title = d3.select("#area")
                 .text(function() {
                     return country_name + ":" + explanation[data[0]["Area"]]
                         [data[0]["Question"]]
                 });
         } else {
+			//when analyze=1, group data and draw comparison ring chart
             var title = d3.select("#area")
                 .text(function() {
                     return "Comparison Analysis" + ":" + explanation[data[0]
@@ -132,19 +134,17 @@ function country(csv) {
             });
     }
 
-    //function that get filtered data of particular question
+    //get filtered data of particular question
     function getCountry(i, pie_name = null) {
         if (pie_name) {
             data = csv.filter(function(d) {
-
                 return d["Question"] === questions.values()[i] && d[
                     "Answer"] != "NA"
             })
             return data;
         } else {
             data = csv.filter(function(d) {
-
-                return d["Question"] === i && d["Answer"] != "NA";
+              return d["Question"] === i && d["Answer"] != "NA";
             })
             return data;
         }
@@ -153,14 +153,14 @@ function country(csv) {
 
     //draw grouped data
     function drawAnalyze(data) {
-
+		//get all increased country  
         dataIncreased = data.filter(function(d) {
-            debugger;
             return increasedCountry.has(d["Country"])
         });
         dataDecreased = data.filter(function(d) {
             return !(increasedCountry.has(d["Country"]))
         });
+		//get all uniqe answer
         var answer = d3.set();
         dataIncreased.forEach(function(d) {
             answer.add(d["Answer"])
@@ -197,7 +197,6 @@ function country(csv) {
                     number: increaseNumber,
                     enabled: 1
                 }
-                debugger;
                 leftData.push(l);
                 r = {
                     Answer: answer.values()[i],
@@ -232,14 +231,14 @@ function country(csv) {
 
     tooltip.append('div')
         .attr('class', 'percent');
-
+    //create basic attribute variable and svg 
     var donutWidth = 85;
     var width = 420;
     var height = 420;
     var radius = Math.min(width, height) / 2;
     var legendRectSize = 24;
     var legendSpacing = 6;
-
+	//append svg
     var arc = d3.arc()
         .innerRadius(radius - donutWidth)
         .outerRadius(radius);
@@ -250,7 +249,7 @@ function country(csv) {
         })
         .sort(null)
 
-    //create two svg
+    //create two svg containing two ring chart
     var svgMale = d3.select("#pie")
         .append("svg")
         .attr("width", width)
@@ -274,6 +273,7 @@ function country(csv) {
             50) + ')');
 
     if (analyze === 0) {
+	//get country data when analyze = 0
         csv = csv.filter(function(d) {
             return d["Country"] === country_name
         })

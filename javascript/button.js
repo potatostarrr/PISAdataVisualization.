@@ -14,7 +14,7 @@ function button() {
         cb = null,
         rect = null;
 
-    function my() {
+    function createButton() {
 
         // set defaults if there is no default variables, then create it
         g = container || d3.select('svg').append('g')
@@ -58,7 +58,7 @@ function button() {
         // TESTING -- SVG "use" element for testing dimensions of drop-shadow filter
         //    g.append('use').attr('xlink:href', '#shadowrect' + count)
 
-        return my;
+        return createButton;
     }
 
     function addGradient(k) {
@@ -131,29 +131,29 @@ function button() {
             .attr('dy', '4')
     }
 
-    my.container = function(_) {
+    createButton.container = function(_) {
         if (!arguments.length) return container;
         container = _;
-        return my;
+        return createButton;
     };
 
-    my.text = function(_) {
+    createButton.text = function(_) {
         if (!arguments.length) return text;
         text = _;
-        return my;
+        return createButton;
     };
 
-    my.count = function(_) {
+    createButton.count = function(_) {
         if (!arguments.length) return count;
         count = _;
-        return my;
+        return createButton;
     };
 
-    my.cb = function(_) {
+    createButton.cb = function(_) {
         if (!arguments.length) return cb;
         cb = _;
-        return my;
+        return createButton;
     };
 
-    return my;
+    return createButton;
 }

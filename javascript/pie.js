@@ -19,14 +19,13 @@ function pie(csv) {
         d3.select("#tip")
             .append("p")
             .text(tip[data[0]["Area"]])
-
+		//bind data with path, gender plus answer will decide color in the ring chart
         var path = svg.selectAll("path")
             .data(pie_scaler(data))
             .enter()
             .append("path")
             .attr("d", arc)
             .attr("fill", function(d, i) {
-
                 return color(d.data.Gender + ", " + d.data.Answer);
             })
             .each(function(d) {
@@ -54,7 +53,8 @@ function pie(csv) {
             tooltip.style('top', (d3.event.layerY + 10) + 'px')
                 .style('left', (d3.event.layerX + 280) + 'px')
         });
-
+		
+		//bind all selected color with legend and transform the center
         var legend = svg.selectAll(".legend")
             .data(color.domain())
             .enter()
@@ -74,6 +74,7 @@ function pie(csv) {
             .style('fill', color)
             .style('stroke', color)
             .on("click", function(label) {
+				//if there is only one color left, then don't do anything
                 var rect = d3.select(this);
                 var enabled = true;
                 var totalEnabled = d3.sum(data.map(function(d) {
@@ -87,19 +88,19 @@ function pie(csv) {
                     rect.attr('class', 'disabled');
                     enabled = false;
                 }
-
+				//change the way pie_scaler read the data
                 pie_scaler.value(function(d) {
                     if ((d.Gender + ", " + d.Answer) === label) {
                         d.enabled = enabled;
                     }
                     return (d.enabled) ? d.number : 0;
                 });
+				//bind new data with path
                 path = path.data(pie_scaler(data));
-
+				//change ratio of ring chart
                 path.transition()
                     .duration(750)
                     .attrTween('d', function(d) {
-
                         var interpolate = d3.interpolate(this._current,
                             d);
                         this._current = interpolate(0);
@@ -108,7 +109,7 @@ function pie(csv) {
                         };
                     });
             })
-
+		//append description to legend
         legend.append('text')
             .attr('x', legendRectSize + legendSpacing)
             .attr('y', legendRectSize - legendSpacing)
@@ -131,7 +132,8 @@ function pie(csv) {
             return data;
         }
     }
-
+	
+	//create tooltip in the pie svg
     var tooltip = d3.select('#pie')
         .append('div')
         .attr('class', 'tooltip')
@@ -152,9 +154,9 @@ function pie(csv) {
     var radius = Math.min(width, height) / 2;
     var legendRectSize = 24;
     var legendSpacing = 6;
-
+	//using default d3 color scaler
     var color = d3.scaleOrdinal(d3.schemeCategory10b);
-
+	//append svg
     var svg = d3.select("#pie")
         .append("svg")
         .attr("width", width)
@@ -165,19 +167,18 @@ function pie(csv) {
         .append("g")
         .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) +
             ')');
-
+	//arc will decide the width of ring chart
     var arc = d3.arc()
         .innerRadius(radius - donutWidth)
         .outerRadius(radius);
-
+	//return number as value in pie scaler
     var pie_scaler = d3.pie()
         .value(function(d) {
             return d.number;
         })
         .sort(null)
-
+	//get all unique questions for given question domain
     questions = new d3.set();
-
     csv.forEach(function(d) {
 
         if (d["Area"] === pie_name) {
@@ -185,9 +186,9 @@ function pie(csv) {
         }
         d.enabled = true;
     });
-
+	
     questionIndex = 0;
-
+	//get the first question as default data
     data = getQuestion(questionIndex, pie_name);
 
     //adding event to dropbox
@@ -202,7 +203,7 @@ function pie(csv) {
     }
     //draw chart
     drawPie(data);
-
+	//when dropbox change, draw ring chart of different question
     drop
         .on("change", function() {
             data = getQuestion(d3.select(this).property('value'));
